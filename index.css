@@ -1,0 +1,160 @@
+*{
+  line-height: 0px;
+}
+p{
+  font-size: 10px
+}
+h3{
+  font-size: 24px
+}
+h6{
+  font-size: 12px
+}
+.details-button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  border-radius: 12px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  opacity: 1;
+  cursor: pointer;
+}
+.details-button:hover{
+  background-color: #04754c;
+}
+
+.slider-section {
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 100%;
+    height: 30rem;
+    overflow: hidden;
+    position: relative;
+    overflow-anchor: none;
+  }
+  .slogan{
+    justify-self: center;
+  }
+  .slider-container{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    overflow-anchor: none;
+  }
+  .slider-container:before{
+    content: "";
+    position: absolute;
+    display: block;
+    left: -20px;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    background: linear-gradient(to right, white 0%, transparent 100%);
+  }
+  .slider-container:after{
+    content: "";
+    position: absolute;
+    display: block;
+    right: -20px;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(to left, white 0%, transparent 100%);
+  }
+  .card-container {
+    display: flex;
+    position: absolute;
+    overflow-anchor: none;
+  }
+  .card {
+    width: 18rem;
+    height: 22rem;
+    color: white;
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+    margin: 1rem;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    overflow-anchor: none;
+  }
+  .card-1 {
+    background-image: url(./public/IT.png);
+  }
+  .card-details{
+    position: absolute;
+    width: 16rem;
+    height: 20rem;
+    border-radius: 24px;
+    margin: 0;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    cursor: pointer;
+  }
+  .card-details:hover{
+    opacity: .80;
+  }
+  .card-2 {
+    background-image: url(./public/Projects.png);
+  }
+  .card-3 {
+    background-image: url(./public/Operations.png);
+  }
+  .card-4 {
+    background-image: url(./public/Sales.png);
+  }
+
+  .prev-arrow {
+    position: absolute;
+    display: flex;
+    top: 45%;
+    left: 2rem;
+    margin: auto;
+    padding-top: 1.7rem;
+    padding-left: .6rem;
+    height: 4rem;
+    color: white;
+    background-color: rgb(30, 2, 128);
+    border-width: 0px;
+    width: 4rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    z-index:1;
+  }
+
+  .next-arrow {
+    position: absolute;
+    display: flex;
+    top: 45%;
+    right: 2rem;
+    height: 4rem;
+    width: 4rem;
+    margin: auto;
+    padding-top: 1.7rem;
+    padding-left: .7rem;
+    color: white;
+    background-color: rgb(30, 2, 128);
+    border-width: 0px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    z-index:1;
+  }
+  .next-arrow:hover,
+  .prev-arrow:hover{
+    border-color: white;
+    border-width: 1px;
+  }
